@@ -11,6 +11,7 @@ import Project from './components/Project'
 import Profile from './components/Profile'
 import Create from './components/Create'
 import Login from './components/auth/Login'
+import Register from './components/auth/Register'
 
 function App () {
   return (
@@ -33,6 +34,7 @@ function App () {
         <main className="main">
           <div className="content">
             <Route path="/" exact={true} component={Login}/>
+            <Route path="/register" component={Register}/>
             <Route path="/projects" component={Home}/>
             <Route path="/create" component={Create}/>
             <Route path="/project/:id" component={Project}/>
