@@ -4,12 +4,13 @@ import './index.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 import Home from './components/Home'
 import Clients from './components/Clients'
 import Project from './components/Project'
 import Profile from './components/Profile'
 import Create from './components/Create'
-import Login from './components/Login'
+import Login from './components/auth/Login'
 
 function App () {
   return (

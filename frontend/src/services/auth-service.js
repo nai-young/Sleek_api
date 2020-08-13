@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:3000/login/'
+const API_URL = 'http://localhost:5000/'
 class AuthService {
   // access methods
   login (username, password) {
@@ -20,6 +20,16 @@ class AuthService {
   }
 
   register (username, email, password) {
+    axios.post(API_URL + 'signup', {
+      username,
+      email,
+      password
+    })
+  }
 
+  getCurrentUser () {
+    return JSON.parse(localStorage.getItem('user'))
   }
 }
+
+export default new AuthService()

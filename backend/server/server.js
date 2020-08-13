@@ -4,6 +4,7 @@ import db from './db'
 import clientsRoute from '../routes/clientsRoute'
 import createRoute from '../routes/createRoute'
 import profileRoute from '../routes/profileRoute'
+import loginRoute from '../routes/loginRoute'
 
 // connection to database
 const mongoUrl = db.MONGODB_URL
@@ -17,6 +18,7 @@ mongoose.connect(mongoUrl, {
 
 const app = express()
 
+app.use('/', loginRoute)
 app.use('/clients', clientsRoute)
 app.use('/create', createRoute)
 app.use('/profile', profileRoute)
