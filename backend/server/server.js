@@ -9,15 +9,15 @@ mongoose.connect(mongoUrl, {
 }).catch(err => console.error(err.reason))
 
 const app = express.Router()
-app.use('/users', usersRoute)
-app.use('/createproject', createProjectRoute)
+app.use('/clients', clientsRoute)
+app.use('/create', createRoute)
 app.use('/profile', profileRoute)
 
 
 app.get('/projects', (req, res) => {
   res.send('Projects')
 })
-app.get('/projects/:id', (req, res) => {
+app.get('/project/:id', (req, res) => {
   const projectId = req.params.id
   res.send(projectId)
 })

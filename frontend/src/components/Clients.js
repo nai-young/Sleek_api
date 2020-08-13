@@ -1,0 +1,8 @@
+import React from 'react'
+
+function Clients () {
+  return <div>
+    Clients component
+  </div>
+}
+export default Clients
