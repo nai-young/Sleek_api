@@ -2,7 +2,7 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('Login route')
+  res.send('Admin route')
 })
 
-export default router
+module.exports = router

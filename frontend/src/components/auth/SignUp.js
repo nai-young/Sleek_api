@@ -17,7 +17,7 @@ const required = value => {
 }
 
 const email = value => {
-  if (isEmail(value)) {
+  if (!isEmail(value)) {
     return (
       <div role="alert">
         Not a valid email
@@ -26,7 +26,7 @@ const email = value => {
   }
 }
 const valusername = value => {
-  if (valusername.length < 3 || valusername.length > 20) {
+  if (value.length < 3 || value.length > 20) {
     return (
       <div role="alert">
         Username must be between 3 and 20 characters
@@ -35,7 +35,7 @@ const valusername = value => {
   }
 }
 const valpassword = value => {
-  if (valpassword.length < 6 || valpassword.length > 40) {
+  if (value.length < 6 || value.length > 40) {
     return (
       <div role="alert">
         Password must be between 6 and 40 characters
@@ -44,7 +44,7 @@ const valpassword = value => {
   }
 }
 
-export default class Register extends Component {
+export default class SignUp extends Component {
   constructor(props) {
     super(props)
 

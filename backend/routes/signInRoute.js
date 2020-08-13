@@ -2,7 +2,7 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('Profile route')
+  res.send('SignIn route')
 })
 
 module.exports = router

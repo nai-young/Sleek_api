@@ -9,13 +9,13 @@ const required = (value) => {
   if (!value) {
     return (
       <div role="alert">
-                This field is required!
+        This field is required!
       </div>
     )
   }
 }
 
-export default class Login extends Component {
+export default class SignIn extends Component {
   constructor(props) {
     super(props)
 

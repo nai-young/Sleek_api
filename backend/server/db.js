@@ -1,3 +1,5 @@
-export default {
-  MONGODB_URL: process.env.MONGODB_URL || 'mongodb://localhost/sleek_crud'
+module.exports = {
+  HOST: 'localhost',
+  PORT: 27017,
+  DB: 'sleek_crud'
 }
