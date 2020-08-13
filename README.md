@@ -14,6 +14,8 @@
 > Authentication: JWT
 >
 > HTTP requests: Axios
+>
+> ES6 modules: babel
 
 ## Technologies:
 
@@ -60,7 +62,10 @@ npm test
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
+
+
+<a href="https://www.buymeacoffee.com/naiyoung" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

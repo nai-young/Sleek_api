@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
-import './index.css';
+import React from 'react'
+import './App.css'
+import './index.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Home from './components/Home'
 import Clients from './components/Clients'
@@ -11,7 +11,7 @@ import Profile from './components/Profile'
 import Create from './components/Create'
 import Login from './components/Login'
 
-function App() {
+function App () {
   return (
     <Router>
       <div className="grid-container">
@@ -32,7 +32,7 @@ function App() {
         <main className="main">
           <div className="content">
             <Route path="/" exact={true} component={Login}/>
-            <Route path="/projects"  component={Home}/>
+            <Route path="/projects" component={Home}/>
             <Route path="/create" component={Create}/>
             <Route path="/project/:id" component={Project}/>
             <Route path="/clients" component={Clients}/>
@@ -46,7 +46,7 @@ function App() {
         </footer>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

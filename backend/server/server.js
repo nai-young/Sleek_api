@@ -1,18 +1,25 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import db from './db'
+import clientsRoute from '../routes/clientsRoute'
+import createRoute from '../routes/createRoute'
+import profileRoute from '../routes/profileRoute'
 
 // connection to database
 const mongoUrl = db.MONGODB_URL
 mongoose.connect(mongoUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+})
+  .then(() => console.log('Database connected'))
+  .catch(err => console.error(err.reason))
 
-}).catch(err => console.error(err.reason))
+const app = express()
 
-const app = express.Router()
 app.use('/clients', clientsRoute)
 app.use('/create', createRoute)
 app.use('/profile', profileRoute)
-
 
 app.get('/projects', (req, res) => {
   res.send('Projects')
